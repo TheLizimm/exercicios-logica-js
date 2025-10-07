@@ -32,8 +32,6 @@
 
 function resolverLabirinto(matriz) {
     // IMPLEMENTE SUA SOLUÇÃO AQUI
-    
-    matriz[1][2] = 'o';
-    console.log(matriz);
+
     return matriz;
 }
