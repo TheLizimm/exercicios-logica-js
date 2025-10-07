@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício: Resolvedor de Labirintos</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Biblioteca para renderizar Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎯 Exercício: Resolvedor de Labirintos</h1>
+
+        <div class="instructions">
+            <h3>📋 Objetivo</h3>
+            <p>Implemente a função <code>resolverLabirinto(matriz)</code> que encontra e marca o menor caminho entre o
+                início (i) e o fim (f) do labirinto usando a letra 'o'.</p>
+        </div>
+
+        <!-- Caixa colapsável com README -->
+        <div class="readme-container">
+            <button class="readme-toggle" onclick="toggleReadme()">
+                <span id="readme-icon">▶</span> Instruções Completas (README)
+            </button>
+            <div class="readme-content" id="readmeContent">
+                <div id="markdownContent"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="executarTodos()">▶️ Executar Solução</button>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-box cell-wall">x</div>
+                <span>Parede</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box cell-start">i</div>
+                <span>Início</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box cell-end">f</div>
+                <span>Fim</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box cell-path">o</div>
+                <span>Caminho</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box cell-error">!</div>
+                <span>Erro</span>
+            </div>
+        </div>
+
+        <div class="mazes-grid" id="mazesGrid"></div>
+    </div>
+    <script src="readme-content.js"></script>
+    <script src="labirintos.js"></script>
+    <script src="solucao.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

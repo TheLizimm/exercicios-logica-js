@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício: Bubble Sort</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Biblioteca para renderizar Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 1. HEADER -->
+        <h1>🔄 Exercício: Bubble Sort</h1>
+        
+        <!-- 2. OBJETIVO RÁPIDO -->
+        <div class="instructions">
+            <h3>📋 Objetivo</h3>
+            <p>Implemente o algoritmo <strong>Bubble Sort</strong> para ordenar arrays de números inteiros. Sua implementação deve registrar cada troca realizada para análise de complexidade.</p>
+        </div>
+
+        <!-- 3. README COLAPSÁVEL -->
+        <div class="readme-container">
+            <button class="readme-toggle" onclick="toggleReadme()">
+                <span id="readme-icon">▶</span> Instruções Completas (README)
+            </button>
+            <div class="readme-content" id="readmeContent">
+                <div id="markdownContent"></div>
+            </div>
+        </div>
+
+        <!-- 4. BOTÃO DE EXECUÇÃO -->
+        <div class="controls">
+            <button class="btn" onclick="executarTodos()">▶️ Executar Bubble Sort</button>
+        </div>
+
+        <!-- 5. LEGENDA -->
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-box" style="background: #e3f2fd; border: 2px solid #2196F3;"></div>
+                <span>Não ordenado</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box" style="background: #fff3cd; border: 2px solid #ffc107;"></div>
+                <span>Comparando</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box" style="background: #ffcdd2; border: 2px solid #f44336;"></div>
+                <span>Trocando</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box" style="background: #c8e6c9; border: 2px solid #4CAF50;"></div>
+                <span>Ordenado</span>
+            </div>
+        </div>
+
+        <!-- 6. ÁREA DE RESULTADOS -->
+        <div class="arrays-grid" id="arraysGrid"></div>
+    </div>
+
+    <!-- ORDEM DE IMPORTAÇÃO É IMPORTANTE! -->
+    <script src="readme-content.js"></script>
+    <script src="dados.js"></script>
+    <script src="solucao.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
