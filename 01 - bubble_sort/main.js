@@ -241,7 +241,7 @@ async function executarCaso(index) {
     
     try {
         // Executar bubble sort do aluno (sem animação em tempo real)
-        const resultado = await bubbleSort(arrayClone);
+        const resultado = await bubbleSort(arrayClone, registrarComparacao, registrarTroca);
         
         // Salvar animações
         animacoesPendentes[index] = execucaoAtual.animacoes;

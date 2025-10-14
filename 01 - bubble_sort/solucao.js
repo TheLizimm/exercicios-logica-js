@@ -54,7 +54,7 @@
  * - Pior caso: O(n²) - array em ordem inversa
  */
 
-async function bubbleSort(arr) {
+async function bubbleSort(arr, registrarComparacao, registrarTroca) {
     // IMPLEMENTE SUA SOLUÇÃO AQUI
     
     // TODO: Implemente o loop externo (passagens pelo array)
