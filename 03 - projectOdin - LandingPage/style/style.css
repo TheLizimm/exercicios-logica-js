@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --Fundo: #1F2937;
     --textoPrincipal: #F9FAF8;
@@ -151,4 +153,30 @@ header h3{
     font-size: 16px;
     color: black;
     margin: 0;
+    margin-bottom: 25px;
+}
+
+.aboutWeb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 30vh;
+    background-color: var(--textoSegundario);
+    font-weight: 300;
+}
+
+.aboutWeb p{
+    color: var(--informação);
+    font-style: italic;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutWeb h5{
+    margin-left: 250px;
+    font-size: 16px;
 }
