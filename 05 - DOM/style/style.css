@@ -1,0 +1,15 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.divs {
+    width: 8vw;
+    height: 8vh;
+    transition: background-color 0.3s ease;
+}
+
+.divs:hover{
+    background-color: red !important;
+}
