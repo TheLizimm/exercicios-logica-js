@@ -144,8 +144,37 @@ input{
     height: 35px; 
 }
 
-.dirFinal{
+.dirFinal {
+    display: flex;
     height: 34vh;
     width: 67vw;
     background-color: whitesmoke;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px; 
+    align-items: flex-start; 
+}
+
+.dirFinal button {
+    padding: 10px 20px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-bottom: 15px; 
+}
+
+.dirFinal p {
+    font-size: 0.9em;
+    color: darkgray;
+}
+
+.dirFinal p a {
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: bold;
 }
