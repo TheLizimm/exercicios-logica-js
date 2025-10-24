@@ -20,3 +20,4 @@ function calc(){
         alert("Preciso de 2 valores e um operador para fazer o calculo!!!")
     }
 }
+
