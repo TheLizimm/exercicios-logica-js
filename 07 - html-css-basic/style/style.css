@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: gray;
+}
+
+.ladoEsq {
+    display: flex;
+    height: 100vh;
+    width: 33vw; 
+    justify-content: center;
+    position: relative; 
+}
+
+.background{
+    position: relative;
+    height: 100vh;
+    width: 33vw;
+}
+
+.painelTop{
+    display: flex;
+    position: absolute;
+    height: 20vh;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 180px;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    position: relative;
+    height: 15vh;
+}
+
+.textTop{
+    display: flex;
+    position: relative;
+    font-size: 32px;
+    color: white;
+}
+.creditoFoto {
+    display: flex;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 33vw; 
+    padding: 5px; 
+    justify-content: center;
+}
+
+.creditoFoto p{
+    color: white;
+    font-size: 16px;
+}
+
+.ladoDir{
+    display: flex;
+    height: 100vh;
+    width: 67vw;
+    background-color: cadetblue;
+    flex-direction: column;
+}
+
+.dirTop{
+    display: flex;
+    height: 33vh;
+    width: 67vw;
+    background-color: whitesmoke;
+}
+
+.dirTop p{
+    font-size: 24px;
+    align-self: flex-end; 
+    margin-left: 50px; 
+    margin-bottom: 30px; 
+    text-align: left;
+}
+
+.dirMeio{
+    height: 33vh;
+    width: 67vw;
+    background-color: white;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.dirMeio p {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    color: gray;
+    padding-left: 20px; 
+    margin-top: 0; 
+    margin-bottom: 10px; 
+}
+
+form{
+    padding: 20px;
+    background-color: white;
+}
+
+.inputR{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.formGroup{
+    flex: 1;
+}
+
+label{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+input{
+    color: black;
+    width: 100%;width: 100%;
+    padding: 8px 10px;
+    border: 1px solid gray; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    font-size: 1em;
+    outline: none; 
+    height: 35px; 
+}
+
+.dirFinal{
+    height: 34vh;
+    width: 67vw;
+    background-color: whitesmoke;
+}
