@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.lateral {
+    background-color: #0d8ce0;
+    color: white;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 20px 20px 20px;
+}
+
+.logo i {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.menu li:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu i {
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.menu span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu.bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.topDireita {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 480px;
+}
+
+.topDireita i {
+    font-size: 22px;
+    color: #333;
+}
+
+.topDireita input {
+    border: none;
+    background: #f0f3f7;
+    border-radius: 20px;
+    padding: 8px 15px;
+    width: 20vw;
+    outline: none;
+    font-size: 14px;
+}
+
+.topEsquerda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 380px;
+}
+
+.topEsquerda i {
+    font-size: 22px;
+    color: #333;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.avatar.large { 
+    width: 60px;
+    height: 60px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.Perfil {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    background: white;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.Perfil .avatar.large {
+    width: 60px;
+    height: 60px;
+}
+
+.user{
+    padding-left: 20px;
+}
+
+.user .greeting {
+    font-size: 14px;
+    color: #555;
+}
+
+.user h2 {
+    font-size: 20px;
+    margin: 3px 0;
+}
+
+.user span {
+    color: gray;
+    font-weight: normal;
+}
+
+.buttons{
+    padding-left: 750px;
+}
+
+.buttons button {
+    background-color: #0d8ce0;
+    width: 5vw;
+    height: 4vh;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #0b7ac5;
+}
+
+
+.projects {
+    display: flex;
+    flex: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+}
+
+.card {
+    width: 15vw;
+    height: 20vh;
+    background-color: #fff; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.card .icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.card .icons i {
+    font-size: 1.2rem;
+    color: #555;
+    cursor: pointer;
+}
