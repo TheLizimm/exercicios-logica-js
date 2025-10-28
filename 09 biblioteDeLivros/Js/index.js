@@ -51,11 +51,11 @@ function cSingle(){
             card.remove(); //remove o pai(card)
         });  
         let status = document.createElement('button')
-        status.innerHTML = myLibrary[i].read ? "Não Lido" : "Lido";
+        status.innerHTML = myLibrary[i].read ? "Lido" : "Não Lido";
         status.addEventListener('click', function(){
             myLibrary[i].read = !myLibrary[i].read; //se true vira false e se for false vira true
             leu.innerHTML = myLibrary[i].read ? "Lido" : "Não Lido"; //atualiza o texto
-            status.innerHTML = myLibrary[i].read ? "Não Lido" : "Lido";  //atualiza o texto do botão
+            status.innerHTML = myLibrary[i].read ? "Lido" : "Não Lido";  //atualiza o texto do botão
         })
         card.appendChild(title)
         card.appendChild(author)   
@@ -76,8 +76,13 @@ container.appendChild(cards) //adicionei cards ao container principal
  function NewBook(){
     let tituloBook = prompt(`Qual o titulo do seu novo livro, ex:${' A arte da guerra'}`)
     let autorBook = prompt(`Qual o autor do seu novo livro, ex:${' Sun Tzu'}`)
-    let paginasBook = prompt(`Quantas paginas tem o seu novo livro, ex:${' 293'}`)
+    let paginasBook = prompt(`Quantas paginas possui o seu livro, ex:${' 293'}`)
     let verifyNumber = parseInt(paginasBook)
+    if(!isNaN(verifyNumber) == false){
+        alert(`Por favor Digite um numero valido`)
+        paginasBook = prompt(`Quantas Paginas possui o seu livro`)
+        verifyNumber = paginasBook
+    }
     let leituraBook = prompt(`Você já leu esse livro, ex:${' true ou false'}`)
     let isRead = leituraBook && leituraBook.toLowerCase() === 'true';
     addInformacao(tituloBook, autorBook, verifyNumber, isRead);  //armazena as informações na função
