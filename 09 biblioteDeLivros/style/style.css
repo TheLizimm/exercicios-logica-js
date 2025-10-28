@@ -1,0 +1,89 @@
+:root {
+    --Header: #261C1A;
+    --card: #AC8F83;
+    --button: #ADA0A2;
+    --background: #D5CCC7;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--Header);
+    align-items: center;
+    justify-content: right;
+}
+
+header button{
+    width: 12vw;
+    height: 4vh;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    background-color: var(--button);
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    
+}
+
+
+.cards {
+    display: grid;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: repeat(4, 1fr);
+}
+    
+ .card {
+    display: flex;
+    max-width: 22vw;
+    height: 25vh;
+    background-color: var(--card); 
+    border: 1px solid #e0e0e0; 
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: column;
+}
+
+.card button {
+    width: 10vw;
+    height: 4vh;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    background-color: var(--button);
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+
