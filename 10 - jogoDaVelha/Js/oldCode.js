@@ -1,3 +1,6 @@
+//CODIGO ANTIGO QUE APAGUEI E REFIZ UM NOVO
+
+
 //Armazenar o tabuleiro do jogo em um array
 const matrizString = [
     ['*', '*', '*'], 
