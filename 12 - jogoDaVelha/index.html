@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="Js/oldCode.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="menu-lateral">
+            <h1>Jogo da velha</h1>
+            <button id="btnAddPlayer" onclick="showModal('modalAddPlayer')">Adicionar Jogadores</button>
+            <button id="btnBoardGame" onclick="showContent('contentGame')">Tabuleiro do Jogo</button>
+            <button id="btnScore" onclick="showContent('contentScore')">Placar</button>
+        </div>
+        <div class="game">
+            <button onclick="tic(this)"></button>
+            <button onclick="tic(this)"></button>
+            <button onclick="tic(this)"></button>
+            <button onclick="tic(this)"></button>
+            <button onclick="tic(this)"></button>
+            <button onclick="tic(this)"></button>
+            <button onclick="tic(this)"></button>
+            <button onclick="tic(this)"></button>
+            <button onclick="tic(this)"></button>
+        </div>
+        <h2 class="jogadorAtual">Pronto para começar!</h2>
+        <div class="reset">
+            <button onclick="reloadBoard()">Reiniciar Jogo</button>
+        </div>
+        <div id="contentScore">
+            <h2>Placar do Jogo</h2>
+            <p>O placar será exibido aqui.</p>
+        </div>
+        <div id="modalAddPlayer">
+            <div class="modalContent">
+                <span class="closeButton" onclick="hideModal('modalAddPlayer')">&times;</span>
+                <h2>Adicionar Jogadores</h2>
+                <form id="playerForm">
+                    <label for="player1Name">Nome do Jogador 1:</label>
+                    <input type="text" id="player1Name" name="player1Name" required><br><br>
+                    <label for="player1-marker">Marcador (X ou O):</label>
+                    <input type="text" id="player1Marker" name="player1Marker" maxlength="1" required><br><br>
+                    <label for="player2-name">Nome do Jogador 2:</label>
+                    <input type="text" id="player2Name" name="player2Name" required><br><br>
+                    <button type="submit">Começar Jogo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

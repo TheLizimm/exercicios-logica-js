@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5f5454; 
+    color: #ffffff; 
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#container {
+    display: flex;
+    width: 90%; 
+    max-width: 1200px;
+    height: 90vh; 
+    border: 2px solid #ffffff; 
+    border-radius: 10px;
+    overflow: hidden; 
+    padding: 0; 
+    position: relative;
+}
+
+#menu-lateral {
+    width: 200px; 
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-right: 2px solid #ffffff;
+    gap: 10px;
+    background-color: #4a4242; 
+    align-items: center;
+    min-height: 100%; 
+}
+
+#menu-lateral h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#menu-lateral button {
+    background: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 15px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left; 
+    width: 100%;
+    margin-bottom: 5px; 
+}
+
+#menu-lateral button:hover {
+    background-color: #6d6464;
+}
+
+.game, .jogadorAtual, .reset, #contentScore {
+    flex-grow: 1; 
+    padding: 20px;
+    text-align: center;
+    display: none; 
+    min-height: 100%; 
+}
+
+.game {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 50px auto 20px auto; 
+    width: fit-content;
+}
+
+.game button {
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.game button:hover {
+    background-color: #4a4242;
+}
+
+.jogadorAtual {
+    margin: 15px 0 20px 0;
+    font-size: 1.5em;
+    width: 100%; 
+    min-height: auto; 
+}
+
+.reset {
+    margin-top: 20px;
+    width: 100%; 
+    min-height: auto;
+}
+
+.reset button {
+    background: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.reset button:hover {
+    background-color: #4a4242;
+}
+
+#contentScore {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#contentScore h2 {
+    margin-bottom: 20px;
+}
+
+#contentScore table {
+    width: 80%;
+    max-width: 400px;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#contentScore th, #contentScore td {
+    border: 1px solid #ffffff;
+    padding: 12px;
+    text-align: left;
+}
+
+#contentScore th {
+    background-color: #4a4242;
+    font-weight: bold;
+}
+
+#modalAddPlayer {
+    display: none; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.8); 
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modalContent {
+    background-color: #333333;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+    color: #ffffff;
+}
+
+.closeButton {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#playerForm label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#playerForm input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #555555;
+    color: white;
+    border-radius: 5px;
+}
+
+#playerForm button[type="submit"] {
+    background-color: #60a060; 
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+#playerForm button[type="submit"]:hover {
+    background-color: #4a804a;
+}
