@@ -78,3 +78,16 @@ button:active {
     color: white; 
 }
 
+.lineRework{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: grab;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
