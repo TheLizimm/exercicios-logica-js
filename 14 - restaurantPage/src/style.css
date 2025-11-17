@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    box-sizing: border-box;
+    background-color: #ffde73;
+    height: 50px;
+    padding-top: 5px;
+}
+
+nav{
+    width: 380px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#coverHome{
+    top: 1px;
+    left: 21px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
+    margin-left: 20px;
+    padding-top: 8px;
+}
+
+
+#coverMenu{
+    top: 1px;
+    left: 141px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
+    margin-left: 20px;
+    padding-top: 8px;    
+}
+
+#coverContact{
+    top: 1px;
+    left: 261px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
+    margin-left: 20px;
+    padding-top: 8px;    
+}
+
+.cover{
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgb(236,164,59);
+    height: 45px;
+    width: 100px;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#dripping-image{
+    height: 45px;
+    width: 98px;
+    position: absolute;
+    bottom: -44px;
+    left: 1px;
+}
+
+#container{
+    display: flex;
+    width: 100vw;
+    height: 140vh;
+    background-image: url(../assets/back.png);
+}
+
+#content{
+    position: relative;
+    width: 60vw;
+    height: 125vh;
+    background-color: #ffde73;
+    border-radius: 30px;
+    margin-top: 80px;
+    margin-left: 400px;
+}
+
+.topoContent{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 100px;
+    width: 710px;
+    height: 60px;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.bee-left{
+    background-color: transparent !important;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 30px;
+}
+
+.bee-right{
+    transform: rotate(-240deg);
+    bottom: 1px;
+    right: 37px;
+    background-color: transparent !important;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+}
+
+.textTop{
+    background-color: #FFC60B;
+    box-sizing: border-box;
+    width: 710px;
+    height: 6vhx;
+    text-align: center;
+    border: 10px solid #c16a08;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.quemSomos{
+    display: flex;
+    margin: 0 auto;
+    width: 850px;
+    height: 350px;
+    padding: 20px;
+}
+
+.hive{
+    background-color: transparent !important;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    top: 185px;
+    left: 45%;
+}
+
+.aboutSomos{
+    border: 10px solid #c16a08;
+    border-radius: 20px;
+    background-color: #FFC60B;
+    box-sizing: border-box;
+    width: 850px;
+    height: 350px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1{
+    margin-top: 45px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text2{
+    margin-top: 90px;
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.timeMenu{
+    display: flex;
+    margin: 0 auto;
+    width: 850px;
+    height: 350px;
+    padding: 20px;
+}
+
+.insideMenu{
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #FFC60B;
+    border: 10px solid #c16a08;
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 850px;
+    height: 350px;
+    padding: 20px;
+}
+
+.ttMenu{
+    margin-left: 10px;
+}
+
+.hours-list {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.hours-list li {
+    font-size: 22px;
+    margin-left: 260px;
+    margin-top: 5px; 
+}
+
+.location{
+    display: flex;
+    margin: 0 auto;
+    width: 850px;
+    height: 200px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.insideLocation{
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #FFC60B;
+    border: 10px solid #c16a08;
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 800px;
+    height: 180px;
+    padding: 20px;
+}
+
+.configLocation{
+    margin-left: 10px;
+}
+
+.textLocation{
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    width: 100vw;
+    height: 3vh;
+    background-color: #FFC60B;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attribution:hover{
+    color: blueviolet;
+}
