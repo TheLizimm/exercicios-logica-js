@@ -97,7 +97,6 @@ nav{
 .topoContent{
     position: relative;
     margin: 0 auto;
-    margin-bottom: 0px;
     margin-bottom: 100px;
     width: 710px;
     height: 60px;
@@ -254,4 +253,141 @@ footer{
 
 .attribution:hover{
     color: blueviolet;
+}
+
+#coverHome:hover{
+    cursor: pointer;
+}
+
+#coverMenu:hover{
+    cursor: pointer;
+}
+
+#coverContact:hover{
+    cursor: pointer;
+}
+
+.subTopo{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #FFC60B;
+    border: 10px solid #c16a08;
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 600px;
+    height: 100px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+}
+
+.subTopo h2{
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 32px;
+}
+
+.hiveMenu{
+    position: absolute;
+    z-index: 10;
+    width: 7vw;
+    height: 7vh;
+    right: -45px;
+    bottom: 0px;
+}
+
+.sameThing{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #FFC60B;
+    border: 10px solid #c16a08;
+    border-radius: 30px; 
+    box-sizing: border-box;
+    width: 600px; 
+    height: 400px; 
+    padding: 20px;
+    position: relative;
+    overflow: hidden; 
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.textContent{
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1; 
+    padding-right: 20px; 
+    align-items: flex-start;
+}
+
+.h3Text{
+    padding-left: 20px;
+    margin-bottom: 10px
+}
+
+.firstT{
+    padding-left: 10px; 
+    font-size: 18px;
+    margin-top: 0; 
+    line-height: 1.4;
+    color: #555; 
+    padding-right: 20px;
+}
+
+.secondT{
+    font-size: 24px; 
+    margin-top: 20px; 
+    font-weight: bold;
+    margin-left: 20px; 
+    color: #000; 
+}
+
+.quadrado{
+    align-self: flex-end;
+    flex-shrink: 0;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid rgba(255, 166, 0, 0.637);
+}
+
+.topoContact{
+    position: relative;
+    margin: 0 auto;
+    width: 210px;
+    height: 60px;
+    padding: 10px;
+}
+
+.beeLeft{
+    background-color: transparent !important;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 30px;
+}
+
+.beeRight{
+    background-color: transparent !important;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    bottom: 1px;
+    right: 37px;
+}
+
+
+#storageMenu,
+#storageContact {
+    display: none;
 }
