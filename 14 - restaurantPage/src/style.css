@@ -61,7 +61,6 @@ nav{
 .cover{
     box-sizing: border-box;
     position: absolute;
-    background-color: rgb(236,164,59);
     height: 45px;
     width: 100px;
     border-radius: 5px 5px 0px 0px;
@@ -69,12 +68,34 @@ nav{
     padding-top: 8px;
 }
 
-#dripping-image{
+.activeCover{
+   background-color: rgb(236,164,59); 
+}
+
+#dripping-Homeimage{
     height: 45px;
     width: 98px;
     position: absolute;
     bottom: -44px;
     left: 1px;
+    visibility: hidden;
+}
+
+#dripping-Menuimage{
+    height: 45px;
+    width: 98px;
+    position: absolute;
+    bottom: -44px;
+    left: 1px;
+    visibility: hidden;
+}
+#dripping-Contactimage{
+    height: 45px;
+    width: 98px;
+    position: absolute;
+    bottom: -44px;
+    left: 1px;
+    visibility: hidden;
 }
 
 #container{
@@ -361,31 +382,43 @@ footer{
 }
 
 .topoContact{
-    position: relative;
+    display: flex;
     margin: 0 auto;
-    width: 210px;
-    height: 60px;
-    padding: 10px;
+    margin-top: 40px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 600px;
+    height: 100px;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    overflow: visible;
 }
 
 .beeLeft{
     background-color: transparent !important;
     width: 50px;
     position: absolute;
-    z-index: 1;
-    top: 5px;
-    left: 30px;
+    z-index: 10;
+    top: 20px;
+    left: 20px;
 }
 
 .beeRight{
     background-color: transparent !important;
     width: 50px;
     position: absolute;
-    z-index: 1;
-    bottom: 1px;
-    right: 37px;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
 }
 
+.textTop{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 32px;
+}
 
 #storageMenu,
 #storageContact {
