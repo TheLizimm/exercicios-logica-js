@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(24, 34, 34);
+    justify-content: flex-end;
+    align-items: end;
+}
+
+header button{
+    margin-right: 10px;
+    width: 6vw;
+    height: 4vh;
+    border-radius: 30px;
+}
+
+header button:hover{
+    cursor: pointer;
+}
+
+#container{
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(66, 53, 36);
+}
