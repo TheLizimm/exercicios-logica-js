@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(5, 7, 6, 0.212);
+}
+
+
+#callSide{
+    display: flex;
+    position: relative;
+    width: 15vw;
+    height: 100vh;
+}
+
+#callSide img{
+    width: 4vw;
+    height: 5vh;
+    margin-top: 20px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+#callSide img:hover{
+    cursor: pointer;
+}
+
+.sideBar{
+    display: none;
+    width: 15vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.sideBar.show{
+    display: block;
+}
