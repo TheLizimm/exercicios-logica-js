@@ -1,3 +1,10 @@
+class Node {
+  constructor(value = null, nextNode = null) {
+    this.value = value;
+    this.nextNode = nextNode;
+  }
+}
+
 class LinkedList {
   constructor() {
     this.headNode = null; 
@@ -119,7 +126,6 @@ class LinkedList {
 
 
   insertAt(value, index) {
-    // Verifica se o índice é válido
     if (index < 0 || index > this.listSize) {
       console.error("Índice fora dos limites.");
       return;
@@ -134,27 +140,38 @@ class LinkedList {
 
     const newNode = new Node(value, previous.nextNode);
     previous.nextNode = newNode;
-    this.listSize++;
+    this.listSize++
   }
 
   removeAt(index) {
     if (index < 0 || index >= this.listSize) {
       console.error("Índice fora dos limites.");
-      return null;
+      return null
     }
 
     if (index === 0) {
       const removedNode = this.headNode;
       this.headNode = this.headNode.nextNode;
-      this.listSize--;
-      return removedNode;
+      this.listSize--
+      return removedNode
     }
 
     let previous = this.at(index - 1);
-    const removedNode = previous.nextNode;
-    previous.nextNode = removedNode.nextNode;
+    const removedNode = previous.nextNode
+    previous.nextNode = removedNode.nextNode
     
-    this.listSize--;
-    return removedNode;
+    this.listSize--
+    return removedNode
   }
 }
+
+const list = new LinkedList();
+list.prepend("mouse")
+list.prepend("parrot")
+list.append("dog")
+list.append("cat")
+list.append("hamster")
+list.append("snake")
+list.append("turtle")
+console.log(list.toString())
+console.log(`Tamanho: ${list.size}`)
